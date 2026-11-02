@@ -6,6 +6,7 @@ CertifyX is a digital certificate management and verification platform that enab
 
 ### 🚀 [Open CertifyX – Digital Certificate Platform](https://d2fgx9fo39pdv2.cloudfront.net/)
 
+
 ## ✨ Features
 
 - Generate digital certificates.
