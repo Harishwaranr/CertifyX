@@ -1,40 +1,40 @@
 # CertifyX – Digital Certificate Management System
 
-CertifyX is a digital certificate management and verification platform that helps users generate, manage, and verify digital certificates.
+CertifyX is a digital certificate management and verification platform that enables organizations to generate, manage, and verify digital certificates securely and efficiently.
 
 ## 🌐 Live Application
 
-**[Open CertifyX](https://d2fgx9fo39pdv2.cloudfront.net/)**
+**[🚀 Open CertifyX – Live Website](https://d2fgx9fo39pdv2.cloudfront.net/)**
 
 ## ✨ Features
 
 - Generate digital certificates.
-- Verify certificates using unique certificate IDs.
-- Generate downloadable PDF certificates.
+- Verify certificates using unique Certificate IDs.
+- Generate and download PDF certificates.
 - QR-code-based certificate verification.
 - Backend API integration.
-- AWS DynamoDB integration for certificate data.
+- AWS DynamoDB integration for secure certificate data management.
 - AWS S3 integration for object storage.
 
 ## 🛠️ Tech Stack
 
-**Frontend**
+### Frontend
 - React
 - TypeScript
 - Vite
 - CSS
 
-**Backend**
+### Backend
 - Node.js
 - Express.js
 - TypeScript
 
-**AWS Services**
-- Amazon ECS
-- Amazon DynamoDB
-- Amazon S3
-- Amazon CloudFront
-- Amazon ECR
+### AWS Cloud Services
+- Amazon ECS – Backend deployment
+- Amazon DynamoDB – Certificate data storage
+- Amazon S3 – Object storage and frontend hosting
+- Amazon CloudFront – Frontend content delivery
+- Amazon ECR – Docker image storage
 
 ## 📁 Project Structure
 
@@ -56,15 +56,23 @@ Digital-Certificate-System/
     └── index.html
 ```
 
-## 🚀 Deployment
+## 🚀 Deployment Architecture
 
-- Frontend hosted using Amazon S3 and distributed through Amazon CloudFront.
-- Backend deployed using Amazon ECS.
-- Certificate data managed using Amazon DynamoDB.
+- **Frontend:** Hosted on Amazon S3 and delivered through Amazon CloudFront.
+- **Backend:** Deployed using Amazon ECS.
+- **Database:** Certificate records are stored in Amazon DynamoDB.
+- **Container Registry:** Backend Docker images are stored in Amazon ECR.
 
 ## 💻 Run Locally
 
-### Frontend
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/HarishwaranR/CertifyX.git
+cd CertifyX
+```
+
+### 2. Run the Frontend
 
 ```bash
 cd frontend
@@ -72,7 +80,9 @@ npm install
 npm run dev
 ```
 
-### Backend
+### 3. Run the Backend
+
+Open another terminal:
 
 ```bash
 cd backend
@@ -86,6 +96,7 @@ Configure the required environment variables before starting the backend.
 
 - Keep AWS credentials and environment variables private.
 - Never commit `.env` files or secret keys to GitHub.
+- Use appropriate AWS IAM permissions for cloud resources.
 
 ## 👨‍💻 Author
 
